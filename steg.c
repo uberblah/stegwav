@@ -72,6 +72,7 @@ static uint8_t maskCopy(uint8_t src, uint8_t dst,
     printByteBits(mask);
     printf("\n");
     */
+    
     // clear the target bits to zeros
     dst &= ~(mask >> dstIdx);
     /*

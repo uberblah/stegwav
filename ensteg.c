@@ -21,19 +21,19 @@ const uint64_t nModes = 7;
 DataMode modeMap[nModes] =
 {
     {SF_FORMAT_PCM_U8, SF_FORMAT_PCM_32,
-     sf_read_int, sf_write_int, sizeof(int), 10},
+     sf_read_int, sf_write_int, sizeof(int), 24},
     {SF_FORMAT_PCM_16, SF_FORMAT_PCM_32,
-     sf_read_int, sf_write_int, sizeof(int), 10},
+     sf_read_int, sf_write_int, sizeof(int), 24},
     {SF_FORMAT_PCM_24, SF_FORMAT_PCM_32,
-     sf_read_int, sf_write_int, sizeof(int), 10},
+     sf_read_int, sf_write_int, sizeof(int), 24},
     {SF_FORMAT_PCM_32, SF_FORMAT_PCM_32,
-     sf_read_int, sf_write_int, sizeof(int), 10},
+     sf_read_int, sf_write_int, sizeof(int), 24},
     {SF_FORMAT_PCM_S8, SF_FORMAT_PCM_32,
-     sf_read_int, sf_write_int, sizeof(int), 10},
+     sf_read_int, sf_write_int, sizeof(int), 24},
     {SF_FORMAT_FLOAT, SF_FORMAT_DOUBLE,
-     sf_read_double, sf_write_double, sizeof(double), 20},
+     sf_read_double, sf_write_double, sizeof(double), 48},
     {SF_FORMAT_DOUBLE, SF_FORMAT_DOUBLE,
-     sf_read_double, sf_write_double, sizeof(double), 20}
+     sf_read_double, sf_write_double, sizeof(double), 48}
 };
 
 int main(int argc, char** argv)

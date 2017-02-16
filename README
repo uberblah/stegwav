@@ -1,0 +1,16 @@
+an audio steganography program, with a single .c/.h LSB steganography lib
+
+the software requires libsndfile and its headers
+
+it should support the same formats as libsndfile,
+  but has only been tested with .wav files
+
+note that the output format may have extended values
+  to make more space for the steganographed data
+
+the encoder is in ensteg.c
+the decoder is in desteg.c
+the LSB steganography library is in steg.{c,h}
+
+to run a test, place a WAV file called input.wav in this directory,
+  and run test.sh...

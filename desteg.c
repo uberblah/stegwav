@@ -18,10 +18,10 @@ const uint64_t subtypeMask = 0x7;
 const uint64_t nModes = 7;
 DataMode modeMap[nModes] =
 {
-    {SF_FORMAT_PCM_16, sf_read_short, sizeof(short), 5},
-    {SF_FORMAT_PCM_32, sf_read_int, sizeof(int), 10},
-    {SF_FORMAT_FLOAT, sf_read_float, sizeof(double), 10},
-    {SF_FORMAT_DOUBLE, sf_read_double, sizeof(double), 20}
+    {SF_FORMAT_PCM_16, sf_read_short, sizeof(short), 12},
+    {SF_FORMAT_PCM_32, sf_read_int, sizeof(int), 24},
+    {SF_FORMAT_FLOAT, sf_read_float, sizeof(double), 24},
+    {SF_FORMAT_DOUBLE, sf_read_double, sizeof(double), 48}
 };
 
 int main(int argc, char** argv)
