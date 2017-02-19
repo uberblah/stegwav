@@ -17,7 +17,7 @@ struct DataMode
 };
 
 const uint64_t subtypeMask = 0x7;
-const uint64_t nModes = 7;
+#define nModes 7
 DataMode modeMap[nModes] =
 {
     {SF_FORMAT_PCM_U8, SF_FORMAT_PCM_32,
